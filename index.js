@@ -1,8 +1,16 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 import express from 'express';
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 import { router as apiRouter } from './routes/api/api.js';
 
