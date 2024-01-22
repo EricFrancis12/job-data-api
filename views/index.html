@@ -109,7 +109,7 @@
                     Example request
                 </div>
                 <div class="mt-2">
-                    curl -X GET https://REPLACETHISDOMAIN.com/api/jobs/accounting/5/?query=tax
+                    curl -X GET https://job-data-api.onrender.com/api/jobs/accounting/5/?query=tax
                 </div>
             </div>
             <div class="w-full pt-4">
@@ -196,10 +196,10 @@
                 </p>
                 <div class="my-8">
                     <h4 class="text-2xl mb-3">
-                        '/jobs'
+                        '/api/jobs'
                     </h4>
                     <p>
-                        The '/jobs' endpoint allows you to retrieve a list of jobs across various categories and
+                        The '/api/jobs' endpoint allows you to retrieve a list of jobs across various categories and
                         experience levels. This endpoint is perfect for obtaining a broad overview of the available job
                         opportunities. Explore the rich diversity of job data provided by our API to enhance the content
                         on your job board websites or for testing purposes.
@@ -207,16 +207,16 @@
                     <pre class="hidden sm:block mt-4 px-3 pt-2 text-white bg-black rounded-lg">
 Example:
                         <code>
-GET /jobs
+GET /api/jobs
                         </code>
                     </pre>
                 </div>
                 <div class="my-8">
                     <h4 class="text-2xl mb-3">
-                        '/jobs/:category'
+                        '/api/jobs/:category'
                     </h4>
                     <p>
-                        With the '/jobs/:category endpoint', you can filter job data based on specific categories or
+                        With the '/api/jobs/:category endpoint', you can filter job data based on specific categories or
                         industries. Tailor your requests to focus on a particular job sector, providing more targeted
                         and relevant results for your users.
                     </p>
@@ -231,16 +231,17 @@ GET /jobs
                     <pre class="hidden sm:block mt-4 px-3 pt-2 text-white bg-black rounded-lg">
 Example:
                         <code>
-GET /jobs/technology
+GET /api/jobs/technology
                         </code>
                     </pre>
                 </div>
                 <div class="my-8">
                     <h4 class="text-2xl mb-3">
-                        '/jobs/:category/:amount'
+                        '/api/jobs/:category/:amount'
                     </h4>
                     <p>
-                        The '/jobs/:category/:amount' endpoint allows you to control the number of jobs returned for a
+                        The '/api/jobs/:category/:amount' endpoint allows you to control the number of jobs returned for
+                        a
                         specific category. This flexibility enables you to fine-tune the amount of data received,
                         optimizing the performance of your applications.
                     </p>
@@ -258,7 +259,7 @@ GET /jobs/technology
                     <pre class="hidden sm:block mt-4 px-3 pt-2 text-white bg-black rounded-lg">
 Example:
                         <code>
-GET /jobs/technology/10
+GET /api/jobs/technology/10
                         </code>
                     </pre>
                 </div>
@@ -342,15 +343,14 @@ GET /jobs/technology/10
                     <pre class="hidden sm:block mt-4 px-3 pt-2 text-white bg-black rounded-lg">
 Example:
                         <code>
-GET /jobs/technology/10?query=developer
+GET /api/jobs/technology/10?query=developer
                         </code>
                     </pre>
                 </div>
             </div>
         </div>
     </div>
-    <div id="contact" class="flex flex-col justify-center items-center"
-        style="background-color: rgb(171, 218, 222);">
+    <div id="contact" class="flex flex-col justify-center items-center" style="background-color: rgb(171, 218, 222);">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us
             </h2>
